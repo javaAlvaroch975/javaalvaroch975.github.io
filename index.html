@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Inicio Proyecto Accesibilidad</title> <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div style="display: flex; gap: 16px; justify-content: center; margin: 24px 0;">
-        <a href="./Proyecto RESPONSIVE/index.html" style="background: #222; color: #fff; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: bold;">1 - Responsive</a>
-        <a href="./Proyecto MULTIMEDIA/index.html" style="background: #ff6347; color: #fff; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: bold;">2 - Multimedia</a>
-        <a href="./Proyecto_AAA/index.html" style="background: #4caf50; color: #fff; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: bold;">3 - AAA</a>
-    </div>
+    <header>
+        <h1>Proyectos de Accesibilidad Álvaro</h1>
+    </header>
+    <main>
+        <nav class="nav-container" aria-label="Menú de proyectos"> 
+            <a href="./Proyecto RESPONSIVE/index.html" class="btn btn-responsive">Responsive</a>
+            <a href="./Proyecto MULTIMEDIA/index.html" class="btn btn-multimedia">Multimedia</a>
+            <a href="./Proyecto_AAA/index.html" class="btn btn-aaa">AAA</a>
+        </nav>
+    </main>
 </body>
 </html>
