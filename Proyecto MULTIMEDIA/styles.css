@@ -1,3 +1,8 @@
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
 /* Enlaces Audio y Video */
 .enlaces-video-audio {
     display: grid;
@@ -70,4 +75,25 @@
 
 .enlaces-video-audio .seccion-centrada {
     text-align: center;
+}
+
+.skip-link {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    background: #1a237e;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.skip-link:focus {
+    opacity: 1;
+    pointer-events: auto;
 }
