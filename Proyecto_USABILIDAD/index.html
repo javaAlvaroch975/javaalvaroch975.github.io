@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Responsive</title>
+    <link rel="stylesheet" href="volupa.css">
+</head>
+<body>
+    <header> <!-- HEADER PRINCIPAL DE LA PAGINA-->
+        <div class="header-top"> <!-- parte superior -->
+            <div>
+                <form class="form-money-language" action="#" method="get">
+                    <label for="language-select" style="display:none;">Idioma</label>
+                    <select id="language-select" name="language">
+                        <option value="en">ENG</option>
+                        <option value="es">ESP</option>
+                        <option value="fr">FRA</option>
+                    </select>
+                    <label for="coin-select" style="display:none;">Moneda</label>
+                    <select id="coin-select" name="currency">
+                        <option value="usd">$ USD</option>
+                        <option value="eur">€ EUR</option>
+                        <option value="mxn">$ MXN</option>
+                    </select>
+                </form>
+                <div>
+                    <a href="#">MY ACCOUNT</a>
+                    <a href="#">3 ITEMS</a>
+                    <a href="#">MY ACCOUNT</a>
+                </div>
+            </div>
+        </div>
+        
+        <nav> <!-- parte inferior -->
+            <h1 class="visually-hidden">VOLUPA</h1>
+            <img src="./imagenes/header/logo.png" alt="VOLUPA Logo">
+            <ul>
+                <li><a href="#">HOME </a></li>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">WOMAN</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: Dresses&Looks -->
+        <section class="dresses-looks">
+            <aside>
+                <img src="./imagenes/Dresses&Looks/numeros.png" alt="Numeros">
+            </aside>
+            <article>
+                    <span>NEW ARRIVAL 2020</span>
+                    <h2 class="section-title">Admire Stylish Dresses & Looks</h2>
+                <a href="https://www.youtube.com" target="_blank" class="btn-volupa">SEE MY NEW COLLECTION</a>
+            </article>
+            <img src="./imagenes/Dresses&Looks/modelo.png" alt="Mujer">
+        </section>
+
+        <!-- Section 2: Clothes -->
+        <section class="clothes">
+            <h2 class="visually-hidden">Seccion Clothes</h2>   
+            <ul>
+                <li>
+                    <article class="product-card"> <!-- recuadro Men accesories -->   
+                        <img src="./imagenes/Clothes/zapatos.png" alt="Accesorios para hombre">
+                        <span>Over 1400 Products</span>
+                        <h3>Men's Accesories</h3>
+                        <a href="#">SEE NEW ARRIVAL</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card"> <!-- recuadro Men clothing -->
+                        <img src="./imagenes/Clothes/hombre.png" alt="Hombre traje">
+                        <span>Over 1400 Products</span>
+                        <h3>Men's Clothing</h3>
+                        <a href="#">SEE NEW ARRIVAL</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card align-right"> <!-- recuadro Women's clothing -->
+                        <img src="./imagenes/Clothes/mujer.png" alt="Mujer sueter gris">
+                        <span>Over 1400 Products</span>
+                        <h3>Women's Clothing</h3>
+                        <a href="#">SEE NEW ARRIVAL</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card align-right"> <!-- recuadro Women's accesories --> 
+                        <img src="./imagenes/Clothes/ropa.png" alt="Accesorios para mujer - bolsos coloridos">
+                        <span>Over 1400 Products</span>
+                        <h3>Women's Accesories</h3>
+                        <a href="#">SEE NEW ARRIVAL</a>
+                    </article>
+                </li>
+            </ul> 
+        </section>
+
+        <!-- Section 3: Shipping&Payments -->
+        <section class="shipping-payments"> 
+            <h2 class="visually-hidden">Seccion 2</h2>   
+            <article>
+                <img src="./imagenes/shipping&payments/camion.png" alt="Free Shipping">
+                <h3>Free Shipping</h3>
+                <span>Suspendisse eu porta neque at faucibus vestibulum porta ante nec.</span>
+            </article>
+
+            <article>
+                <img src="./imagenes/shipping&payments/moneda.png" alt="Money Back Guarantee">
+                <h3>Money Back Guarantee</h3>
+                <span>Suspendisse eu porta neque at faucibus vestibulum porta ante nec.</span>
+            </article>
+
+            <article>
+                <img src="./imagenes/shipping&payments/tarjeta.png" alt="Secured Payments">
+                <h3>Secured Payments</h3>
+                <span>Suspendisse eu porta neque at faucibus vestibulum porta ante nec.</span>
+            </article>
+        </section>
+
+        <!-- Section 4: StylishCollection -->
+        <section class="stylish-collection">
+            <article>
+                <div class="section4-content">
+                    <h2 class="section-title">STYLISH COLLECTION</h2>
+                    <h3>NEW ARRIVAL 2020 ADMIRE STYLISH DRESSES & LOOKS.</h3>
+                    <button>SEE NEW COLLECTION</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section 5: NewArrivals -->
+        <section class="new-arrivals">
+            <span>Wardrobe Change is Comming</span>
+            <h2 class="section-title">New Arrivals</h2>
+            <p>Aliquam rutrum pulvinar tortor, vel fermentum tellus tincidunt vitae. Aenean interdum sagittis diam, vel congue neque rutrum in. Fusce eget mi pretium, imperdiet orci quis, bibendum ipsum.</p>
+            <ul>
+                <li>WOMEN'S FASHION</li>
+                <li>MEN'S FASHION</li>
+                <li>KIDS & BABIES</li>
+                <li>ACCESSORIES</li>
+            </ul>
+        </section>
+
+        <!-- Section 6: Carrusel -->
+        <section class="carrusel">
+            <ul class="car-imagenes">
+                <li>
+                    <article>
+                        <img src="./imagenes/Carrusel/modelo.png" alt="Short Dress with Flounces">
+                        <span>WOMEN'S FASHION</span>
+                        <h3>SHORT DRESS WITH FLOUNCES</h3>
+                        <span>$39.00</span>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="./imagenes/Carrusel/modelo2.png" alt="White Shirt and Plaid Skirt">
+                        <span>WOMEN'S FASHION</span>
+                        <h3>WHITE SHIRT AND PLAID SKIRT</h3>
+                        <span>$370.00</span>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="./imagenes/Carrusel/modelo3.png" alt="Short Shirt Dress">
+                        <span>WOMEN'S FASHION</span>
+                        <h3>SHORT SHIRT DRESS</h3>
+                        <span>$190.00</span>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="./imagenes/Carrusel/modelo4.png" alt="Blazer-Style Sleeveless Dress">
+                        <span>WOMEN'S FASHION</span>
+                        <h3>BLAZER-STYLE SLEEVELESS DRESS</h3>
+                        <span>$250.00</span>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="./imagenes/Carrusel/modelo5.png" alt="Uppard T-Shirt">
+                        <span>WOMEN'S FASHION</span>
+                        <h3>UPPARD T-SHIRT</h3>
+                        <span>$110.00</span>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="./imagenes/Carrusel/modelo6.png" alt="Uppard T-Shirt">
+                        <span>WOMEN'S FASHION</span>
+                        <h3>UPPARD T-SHIRT</h3>
+                        <span>$210.00</span>
+                    </article>
+                </li>
+            </ul>
+            
+            <section class="formNewArrivals">
+            <!-- Formulario Sec 6 -->
+            <div class="but-sec6">
+                <button>SEE NEW COLLECTION ></button>
+            </div>
+
+            <div class="form-center" style="grid-column: 1 / -1;">
+                <h2 class="section-title">Subscribe to get the latest updates</h2>
+                <form>
+                    <label for="subscribe-email" class="visually-hidden"></label>
+                    <input id="subscribe-email" type="email" placeholder="Email Address" required>
+                    <button type="submit" class="btn-volupa">
+                        <span>Enviar</span>
+                    </button>
+                </form>
+                <img src="./imagenes/Carrusel/iconosredes.svg" alt="Iconos redes sociales" class="iconos">
+            </div>
+            </section>
+        </section>
+    </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-logo">
+                    <img src="./imagenes/footer/logo black.png" alt="VOLUPA Logo">
+                    <span>Praesent sollicitudin aliquam ornare. Suspendisse ornare justo rhoncus dui rutrum, sit amet placerat libero dictum. Nullam consectetur augue eros et aliquet velit egestas vitae. Praesent sollicitudin aliquam ornare. Suspendisse ornare justo rhoncus dui rutrum.</span>
+                    <div class="footer-payments">
+                        <img src="./imagenes/footer/pagos.png" alt="Métodos de pago">
+                    </div>
+                </div>
+                <div class="footer-wrapper">
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>+703-327-7864</li>
+                            <li>info@volupa.com</li>
+                            <li>Via Solferino, 7 - 20121 Milano - Italy</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Usefull Links</h4>
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>Payments</li>
+                            <li>Shipping Informations</li>
+                            <li>Returns and Refunds</li>
+                            <li>Frequently asked questions</li>
+                            <li>Terms and Conditions</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>My Account</h4>
+                        <ul>
+                            <li>Login</li>
+                            <li>My orders</li>
+                            <li>Personal Data</li>
+                            <li>Wishlist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>      
+</body>
+</html>

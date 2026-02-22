@@ -41,9 +41,9 @@ h1 {
 }
 
 .btn-multimedia {
-    background-color: #b32400; 
+    background-color: #800000; 
     color: #ffffff;
-    border-color: #b32400;
+    border-color: #800000;
 }
 
 .btn-aaa {
@@ -60,4 +60,10 @@ h1 {
 .btn:hover {
     filter: brightness(1.2);
     text-decoration: underline;
-}
+    }
+
+.btn-usabilidad {
+        background-color: #3b82f6;
+        color: #ffffff;
+        border-color: #3b82f6;
+    }
