@@ -1,3 +1,22 @@
+.skip-link {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    background: #1a237e;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+.skip-link:focus {
+    opacity: 1;
+    pointer-events: auto;
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
 
 /* Títulos de Dresses&Looks, StylishCollection y NewArrivals */
@@ -819,9 +838,12 @@ footer {
             .footer-column {
                 min-width: 140px;
                 
-                h4 {
+                h3 {
                     font-size: 16px;
                     margin-bottom: 12px;
+                    font-weight: 600;
+                    color: #fff;
+                    font-family: 'Montserrat', sans-serif;
                 }
                 
                 ul li {
