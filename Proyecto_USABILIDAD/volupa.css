@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
+
 .skip-link {
     position: absolute;
-    left: 8px;
-    top: 8px;
+    left: -9999px;
+    top: auto;
     background: #1a237e;
     color: #fff;
     padding: 8px 18px;
@@ -9,15 +11,24 @@
     z-index: 1000;
     text-decoration: none;
     font-weight: bold;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s;
+    transition: left 0.2s;
 }
 .skip-link:focus {
-    opacity: 1;
-    pointer-events: auto;
+    left: 8px;
+    top: 8px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Montserrat:wght@800&display=swap');
+
+a, button {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    line-height: 1.5 !important;
+}
 
 /* Títulos de Dresses&Looks, StylishCollection y NewArrivals */
 .section-title {
@@ -45,11 +56,52 @@ body {
     padding: 0;
 }
 
-/* HEADER CON NAVS */
+/* HEADER PRINCIPAL */
 header {
     padding-bottom: 4px;
 }
 
+/* BARRA SUPERIOR (HEADER-TOP) */
+.header-top {
+    background-color: #000000; /* Negro puro para asegurar cumplimiento AAA */
+    color: #ffffff;
+    padding: 6px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-top > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 8px 40px;
+}
+
+.header-top div {
+    display: flex;
+    gap: 20px;
+}
+
+/* Corrección de Enlaces en Header-Top */
+.header-top a {
+    text-decoration: none;
+    /* !important para evitar el azul por defecto del navegador que causaba el error */
+    color: #ffffff !important; 
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.header-top a:visited {
+    color: #ffffff !important;
+}
+
+.header-top a:hover {
+    text-decoration: underline;
+}
+
+/* FORMULARIO DE IDIOMA Y MONEDA */
 .form-money-language {
     background: transparent;
     display: flex;
@@ -59,15 +111,16 @@ header {
 }
 
 .form-money-language select {
-    background: #222;
-    color: #fff;
-    border: none;
+    background: #000000; /* Fondo negro */
+    color: #ffffff;
+    border: 1px solid #444; /* Borde sutil para accesibilidad visual */
     box-shadow: none;
     border-radius: 4px;
     padding: 4px 12px;
     font-size: 14px;
     outline: none;
     transition: border 0.2s;
+    cursor: pointer;
 }
 
 .form-money-language select:focus {
@@ -78,72 +131,57 @@ header {
     min-width: 80px;
 }
 
-.header-top {
-    background-color: #222;
-    color: white;
-    padding: 6px 0;
-    display: flex;
-    justify-content: center;
-
-    > div:first-child {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1200px;
-        width: 100%;
-        padding: 8px 40px;
-    }
-
-    div {
-        display: flex;
-        gap: 20px;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        
-        &:visited {
-            color: white;
-        }
-    }
-}
-
+/* NAVEGACIÓN INFERIOR (LOGO Y MENÚ) */
 nav {
-    background-color: white;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2px 40px;
-
-    img {
-        height: 50px;
-    }
-
-    ul {
-        display: flex;
-        list-style: none;
-        gap: 60px;
-        margin: 0;
-        padding: 0;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-        
-        &:visited {
-            color: black;
-        }
-        
-        &:hover {
-            color: #ff6347;
-        }
-    }
+    padding: 15px 40px; /* Un poco más de aire */
 }
 
+nav img {
+    height: 50px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px; /* Reducido un poco para evitar desbordamientos en pantallas medianas */
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000 !important; /* Negro puro sobre blanco para cumplimiento AAA */
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+nav a:visited {
+    color: #000000 !important;
+}
+
+nav a:hover {
+    color: #ff6347 !important; /* Color de acento */
+}
+
+/* Extra: Clase para ocultar el H1 de forma accesible si lo usas */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 /* Dresses&Looks */
  .dresses-looks {
@@ -838,12 +876,9 @@ footer {
             .footer-column {
                 min-width: 140px;
                 
-                h3 {
+                h4 {
                     font-size: 16px;
                     margin-bottom: 12px;
-                    font-weight: 600;
-                    color: #fff;
-                    font-family: 'Montserrat', sans-serif;
                 }
                 
                 ul li {
