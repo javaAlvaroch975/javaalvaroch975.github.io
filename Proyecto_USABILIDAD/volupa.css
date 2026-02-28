@@ -403,7 +403,7 @@ nav a:hover {
 
 /* StylishCollection */
  .stylish-collection {
-    background: url('./imagenes/StylishCollection/modelohombre.png') no-repeat center center;
+    background: url('./imagenes/StylishCollection/modelohombre.webp') no-repeat center center;
     background-size: cover;
     min-height: 500px;
     display: flex;
